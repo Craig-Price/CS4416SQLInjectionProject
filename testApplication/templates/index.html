@@ -3,12 +3,16 @@
 <body>
 
 <h1>SQL Injection Testing Website</h1>
-<form action="\request" method="post">
-    <input type="text" name="requestValue">
+<h2>Login Request:</h2>
+<form action="\login" method="get">
+    <input type="text" name="username" placeholder="username">
+    <input type="text" name="password" placeholder="password">
     <input type="submit">
 </form>
-<h2>The Data Returned from the request was:</h2>
-<p>{{data.response}}</p>
-<p>{{data.result}}</p>
+<h2>User Request:</h2>
+<form action="\users" method="get">
+    <input type="text" name="rank" placeholder="user">
+    <input type="submit">
+</form>
 </body>
 </html>
